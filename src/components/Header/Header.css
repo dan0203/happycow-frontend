@@ -18,7 +18,7 @@ header ul {
     gap: 10px;
 }
 
-header a {
+header nav a {
     color: #fff;
     background-color: var(--primary-color);
     padding: 15px 5px;
@@ -30,6 +30,6 @@ header a {
     text-align: center;
 }
 
-header a:hover {
+header nav a:hover {
     background-color: var(--secondary-color);
 }

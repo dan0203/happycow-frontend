@@ -1,17 +1,22 @@
+// Modules internes
 import './Header.css';
 import logo from '../../assets/logo.png';
+// Modules yarn
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <header>
-            <img src={logo} alt="Image d'une vache mignonne violette, logo de HappyCow" />
+            <Link to="/">
+                <img src={logo} alt="Image d'une vache mignonne violette, logo de HappyCow" />
+            </Link>
             <nav>
                 <ul>
                     <li>
-                        <a href="#">Login</a>
+                        <Link to="/login">Login</Link>
                     </li>
                     <li>
-                        <a href="#">Sign up</a>
+                        <Link to="/signup">Sign up</Link>
                     </li>
                 </ul>
             </nav>
